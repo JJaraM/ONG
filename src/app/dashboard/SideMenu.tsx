@@ -18,7 +18,7 @@ export class SideMenu extends React.Component<any, any> {
         <div className="main-menu">
           <ul className="list-unstyled components">
             <li className="active">
-              <Link to="/pets">
+              <Link to="/dashboard">
                 <div className="row">
                   <div className="col-md-6 col-sm-6 col-xs-6 col-xs-center">
                     <span>{localization.menu.home}</span>
