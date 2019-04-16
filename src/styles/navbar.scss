@@ -1,18 +1,26 @@
 @import "shared";
 
+
+
 .sidebar {
-    min-height: calc(100vh - 63px);
+    font-size: .9rem;
+    min-height: calc(100vh - 65px);
     background: #222437;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     padding: 0;
-    width: 180px;
+    width: 239px;
     z-index: 11;
     transition: width 0.25s ease, background 0.25s ease;
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
     border-right: 1px solid rgba(255,255,255,.07);
+
+    .row-item:hover {
+      //background: var(--side-menu-hover-background);
+      border-radius: 5px;
+    }
 }
 
 .nav-item {
@@ -87,19 +95,27 @@ main .container-fluid {
   margin-left: auto;
 }
 
+.admin-sidebar .menu .menu-item {
+    position: relative;
+    display: block;
+    clear: both;
+    width: 100%;
+    list-style: none;
+    transition: opacity ease .2s;
+}
 
 .main-menu {
-  width: 180px;
+
   height: 100%;
   background: var(--side-menu-background);
   z-index: 2;
   position: fixed;
   transition: transform .3s;
-  padding-top: 2px;
+  //padding-top: 2px;
   left: 0;
-  border-right: 1px solid var(--side-menu-background);
+  //border-right: 1px solid var(--side-menu-background);
 
-  /*box-shadow: 0 3px 30px rgba(0,0,0,.1), 0 3px 20px rgba(0,0,0,.1);*/
+  box-shadow: 0 3px 30px rgba(0,0,0,.1), 0 3px 20px rgba(0,0,0,.1);
 }
 #content {
   width: calc(100% - 250px);
@@ -119,6 +135,9 @@ main .container-fluid {
 
   li {
     padding: 10px 10px 10px 10px;
+    &.active {
+      background: var(--side-menu-hover-background);
+    }
 
     a {
       font-style: normal;

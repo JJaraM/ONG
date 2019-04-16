@@ -44,7 +44,7 @@ export default {
 
           'side-menu-background': '#202225',
           'side-menu-color': '#FFF',
-          'side-menu-hover-background': '#009688',
+          'side-menu-hover-background': 'rgba(114,118,125, .3)',
 
           'body-background': '#36393f',
 

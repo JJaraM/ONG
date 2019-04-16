@@ -20,7 +20,8 @@ const localization = new LocalizedStrings({
      pay: "Pay"
    },
    menu: {
-     home: "Home"
+     home: "Home",
+     settings: "Settings"
    }
  },
  es: {
@@ -42,7 +43,8 @@ const localization = new LocalizedStrings({
      pay: "Pagado"
    },
    menu: {
-     home: "Inicio"
+     home: "Inicio",
+     settings: "Configuraciones"
    }
  }
 });
