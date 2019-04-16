@@ -19,7 +19,7 @@ export class Table extends React.Component<Props, any> {
     return (
       <div className="card m-b-30">
         <div className="card-header">
-          <h5 className="m-b-0">
+          <h5 className="m-b-0 title">
               {this.props.title}
           </h5>
         </div>
@@ -64,7 +64,7 @@ export class Table extends React.Component<Props, any> {
                                 }
                                 if (column.type === 'button') {
                                   return (
-                                    <button className="btn btn-primary btn-sm" onClick={() => column.action(rowId) } >
+                                    <button className="btn btn-primary btn-sm btn-lettuce" onClick={() => column.action(rowId) } >
                                       {column.value}
                                     </button>
                                   )

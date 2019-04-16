@@ -1,12 +1,18 @@
-@import "light2";
-
+@import "shared";
 
 .header-section {
   background-image: url("https://images5.alphacoders.com/404/404607.jpg");
   position: relative;
 }
+
 .btn-tomato, .btn-tomato:hover {
+  border-color: #ff5a6e;
   background: #ff5a6e;
+}
+
+.btn-lettuce, .btn-lettuce:hover {
+  border-color: #00e08b;
+  background-color: #00e08b;
 }
 
 .submit-big-button {
@@ -105,20 +111,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-panel {
-    transition: width 0.25s ease, margin 0.25s ease;
-    width: calc(100% - 180px);
-    min-height: calc(100vh - 63px);
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+  transition: width 0.25s ease, margin 0.25s ease;
+  width: calc(100% - 180px);
+  min-height: calc(100vh - 63px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 
 .section-spacing {
-    padding: 4.5rem 0;
-    overflow: hidden !important;
-    position: relative;
-    z-index: 1;
+  padding: 4.5rem 0;
+  overflow: hidden !important;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -194,22 +200,22 @@ $bgfontcolor: #717787;
       }
 
       & > * {
-         @media screen and (max-width: 767px){
-           display: inline-block;
-           vertical-align: middle;
+        @media screen and (max-width: 767px){
+          display: inline-block;
+          vertical-align: middle;
         }
 
-         @media screen and (max-width: 480px){
+        @media screen and (max-width: 480px){
           display: block;
-           float: none;
+          float: none;
         }
       }
 
       &:after {
-         @media screen and (max-width: 767px){
-           display: table;
-           content: '';
-           clear: both;
+        @media screen and (max-width: 767px){
+          display: table;
+          content: '';
+          clear: both;
         }
       }
 
@@ -222,9 +228,9 @@ $bgfontcolor: #717787;
 
       &:not(:last-of-type){
         margin-right: (100%-$widthoftable*3)/2;
-         @media screen and (max-width: 767px){
-           margin-right: auto;
-         }
+        @media screen and (max-width: 767px){
+          margin-right: auto;
+        }
       }
 
       &:nth-of-type(2){
@@ -256,7 +262,7 @@ $bgfontcolor: #717787;
           transition: all 0.5s ease;
 
           @media screen and (max-width: 988px){
-             font-size: 0.6em;
+            font-size: 0.6em;
           }
 
           @media screen and (max-width: 767px){
@@ -273,7 +279,7 @@ $bgfontcolor: #717787;
 
         }
         &:hover:before{
-           transform: rotate(360deg);
+          transform: rotate(360deg);
         }
       }
 
@@ -284,15 +290,15 @@ $bgfontcolor: #717787;
         letter-spacing: 0.03em;
 
         @media screen and (max-width: 1068px){
-           font-size: 1.45em;
+          font-size: 1.45em;
         }
-         @media screen and (max-width: 767px){
-            padding: 0px;
-            border-bottom: none;
-            float: left;
-            width: 33%;
-           padding-top: 3%;
-           padding-bottom: 2%;
+        @media screen and (max-width: 767px){
+          padding: 0px;
+          border-bottom: none;
+          float: left;
+          width: 33%;
+          padding-top: 3%;
+          padding-bottom: 2%;
         }
 
         @media screen and (max-width: 610px){
@@ -300,8 +306,8 @@ $bgfontcolor: #717787;
         }
 
         @media screen and (max-width: 480px){
-           float: none;
-           width: 100%;
+          float: none;
+          width: 100%;
           font-size: 1.8em;
           margin-bottom: 5px;
         }
@@ -314,8 +320,8 @@ $bgfontcolor: #717787;
         border-bottom: 2px solid #ebedec;
         line-height: 0.7;
 
-         @media screen and (max-width: 1068px){
-           font-size: 2.8em;
+        @media screen and (max-width: 1068px){
+          font-size: 2.8em;
         }
 
         @media screen and (max-width: 767px){
@@ -326,23 +332,23 @@ $bgfontcolor: #717787;
           width: 33%;
         }
 
-         @media screen and (max-width: 610px){
+        @media screen and (max-width: 610px){
           font-size: 2.4em;
         }
 
-         @media screen and (max-width: 480px){
-           float: none;
-           width: 100%;
-           font-size: 3em;
-           margin-bottom: 10px;
+        @media screen and (max-width: 480px){
+          float: none;
+          width: 100%;
+          font-size: 3em;
+          margin-bottom: 10px;
         }
 
         span:first-of-type{
           font-size: 0.35em;
           vertical-align: top;
           letter-spacing: 0.15em;
-           @media screen and (max-width: 1068px){
-           font-size: 0.3em;
+          @media screen and (max-width: 1068px){
+            font-size: 0.3em;
           }
         }
         span:last-of-type{
@@ -350,8 +356,8 @@ $bgfontcolor: #717787;
           font-size: 0.30em;
           letter-spacing: 0.04em;
           padding-left: 0.2em;
-           @media screen and (max-width: 1068px){
-           font-size: 0.25em;
+          @media screen and (max-width: 1068px){
+            font-size: 0.25em;
           }
         }
       }
@@ -362,8 +368,8 @@ $bgfontcolor: #717787;
         font-size: 0.9em;
         border-bottom: 2px solid #ebedec;
 
-         @media screen and (max-width: 1068px){
-           font-size: 0.85em;
+        @media screen and (max-width: 1068px){
+          font-size: 0.85em;
         }
 
         @media screen and (max-width: 767px){
@@ -372,14 +378,14 @@ $bgfontcolor: #717787;
           margin-right: 10%;
         }
 
-         @media screen and (max-width: 610px){
+        @media screen and (max-width: 610px){
           font-size: 0.7em;
-           margin-right: 8%;
+          margin-right: 8%;
         }
 
         @media screen and (max-width: 480px){
           font-size: 1.3em;
-           margin-right: none;
+          margin-right: none;
           margin-bottom: 10px;
         }
 
@@ -388,16 +394,16 @@ $bgfontcolor: #717787;
         &>li{
           padding: 8px 0px;
 
-           @media screen and (max-width: 767px){
-               text-align: left;
-            }
+          @media screen and (max-width: 767px){
+            text-align: left;
+          }
 
-           @media screen and (max-width: 610px){
+          @media screen and (max-width: 610px){
             padding: 5px 0;
           }
 
-           @media screen and (max-width: 480px){
-             text-align: center;
+          @media screen and (max-width: 480px){
+            text-align: center;
           }
 
           &:before{
@@ -413,15 +419,15 @@ $bgfontcolor: #717787;
             padding: 2px;
             text-align: center;
 
-             @media screen and (max-width: 1068px){
-               width: 14px;
-               height: 14px;
-               padding: 1.5px;
+            @media screen and (max-width: 1068px){
+              width: 14px;
+              height: 14px;
+              padding: 1.5px;
             }
 
             @media screen and (max-width: 767px){
-               width: 12px;
-               height: 12px;
+              width: 12px;
+              height: 12px;
             }
 
           }
@@ -439,22 +445,22 @@ $bgfontcolor: #717787;
         letter-spacing: 0.07em;
         transition: all 0.4s ease;
 
-         @media screen and (max-width: 1068px){
-           font-size: 0.95em;
+        @media screen and (max-width: 1068px){
+          font-size: 0.95em;
         }
 
         @media screen and (max-width: 767px){
           margin-top: 0;
         }
 
-         @media screen and (max-width: 610px){
+        @media screen and (max-width: 610px){
           font-size: 0.9em;
-           padding: 10px;
+          padding: 10px;
         }
 
         @media screen and (max-width: 480px){
           font-size: 1em;
-           width: 50%;
+          width: 50%;
           margin: 10px auto;
         }
 
@@ -481,12 +487,12 @@ $bgfontcolor: #717787;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 img {
-    vertical-align: middle;
-    border-style: none;
+  vertical-align: middle;
+  border-style: none;
 }
 
 body{
@@ -498,13 +504,13 @@ body{
   @media screen and (max-width: 960px){
     font-size: 80%;
   }
-    @media screen and (max-width: 776px){
+  @media screen and (max-width: 776px){
     font-size: 70%;
   }
-    @media screen and (max-width: 496px){
+  @media screen and (max-width: 496px){
     font-size: 50%;
   }
-    @media screen and (max-width: 320px){
+  @media screen and (max-width: 320px){
     font-size: 40%;
   }
 }

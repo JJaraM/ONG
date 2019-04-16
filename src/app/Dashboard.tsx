@@ -1,14 +1,14 @@
 import * as React from 'react';
 
-import "../styles/petProfile.scss";
-import {withRouter} from "react-router-dom";
 import MaterialIcon, {colorPalette} from 'material-icons-react';
-import localization from "./Localization";
-
 import {PullUpCard} from "../components/PullUpCard";
+
 import {Table} from "../components/Table";
 import TableRow from "../components/TableRow";
 import TableColumn from "../components/TableColumn";
+import localization from "./Localization";
+import people from "../mock/people";
+
 
 export class Dashboard extends React.Component<any, any> {
 
@@ -16,33 +16,54 @@ export class Dashboard extends React.Component<any, any> {
     super(props);
   }
 
+
+
   createData = () => {
     const tableRows = Array<TableRow>();
-    const tableColumns = Array<TableColumn>();
 
-    const row = {} as TableRow
 
-    const avatar = {} as TableColumn;
-    avatar.type = 'avatar';
-    avatar.value = 'Marie Anne'
-    avatar.typeExtra = 'https://atmos.atomui.com/default/assets/img/users/user-1.jpg';
-    tableColumns.push(avatar);
+    people.data.map((person, tagId) => {
+      const tableColumns = Array<TableColumn>();
 
-    const project = {} as TableColumn;
-    project.type = 'badge';
-    project.value = 'project'
-    project.className = 'badge badge-soft-danger badge-light';
-    tableColumns.push(project);
+      const row = {} as TableRow;
 
-    row.columns = tableColumns;
+      const id = {} as TableColumn;
+      id.type = 'id';
+      id.value = person.id;
+      tableColumns.push(id);
 
-    tableRows.push(row);
+      const avatar = {} as TableColumn;
+      avatar.type = 'avatar';
+      avatar.value = person.name;
+      avatar.typeExtra = person.img;
+      tableColumns.push(avatar);
 
+      const project = {} as TableColumn;
+      project.type = 'badge';
+      project.className = 'badge badge-soft-danger badge-light';
+      project.value = person.project;
+      tableColumns.push(project);
+
+      const action = {} as TableColumn;
+      action.type = 'button';
+      action.action = this.view;
+      action.value = 'Action';
+      tableColumns.push(action);
+
+      row.columns = tableColumns;
+
+      tableRows.push(row);
+    })
     return tableRows;
+  }
+
+  view = (id: any) => {
+    this.props.history.push("/pay/1");
   }
 
   render() {
     const tableRows = this.createData();
+    const tableHeaders = [localization.common.contact, localization.common.project, localization.common.action];
 
     return (
         <div className="content-wrapper">
@@ -80,13 +101,13 @@ export class Dashboard extends React.Component<any, any> {
           <div className="change-section row">
               {/*Start Table*/}
               <div className="col-lg-6 ">
-                <Table title={"Pagos Pendientes"} headers={['Persona', 'Header1', 'Header2']} rows={tableRows}/>
+                <Table title={"Pagos Pendientes"} headers={tableHeaders} rows={tableRows}/>
               </div>
               {/*End Table*/}
 
               {/*Start Table*/}
               <div className="col-lg-6 ">
-                <Table title={"Desembolsos por aprobar"} headers={['Persona', 'Header1', 'Header2']} rows={tableRows}/>
+                <Table title={"Desembolsos por aprobar"} headers={tableHeaders} rows={tableRows}/>
               </div>
               {/*End Table*/}
           </div>
@@ -117,7 +138,7 @@ export class Dashboard extends React.Component<any, any> {
 
 
         </div>
-          </div>
+      </div>
     )
   }
 }

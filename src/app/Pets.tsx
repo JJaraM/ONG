@@ -26,7 +26,7 @@ export class Pets extends React.Component<any, any> {
             {
               data.data.map((row, index) => {
                 return (
-                  <div className="col-lg-3 col-md-6 m-b-30">
+                  <div className="col-lg-3 col-md-6 m-b-30" key={index}>
                     <div className="card">
                       <div className="card-body">
                         <div className="text-center">

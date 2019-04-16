@@ -1,4 +1,4 @@
-@import "light2";
+@import "shared";
 
 .sidebar {
     min-height: calc(100vh - 63px);
@@ -15,7 +15,9 @@
     border-right: 1px solid rgba(255,255,255,.07);
 }
 
-
+.nav-item {
+  color: var(--side-menu-color);
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: $title-color;
@@ -89,13 +91,13 @@ main .container-fluid {
 .main-menu {
   width: 180px;
   height: 100%;
-  background: $side-menu-background;
+  background: var(--side-menu-background);
   z-index: 2;
   position: fixed;
   transition: transform .3s;
   padding-top: 2px;
   left: 0;
-  border-right: 1px solid $side-menu-background;
+  border-right: 1px solid var(--side-menu-background);
 
   /*box-shadow: 0 3px 30px rgba(0,0,0,.1), 0 3px 20px rgba(0,0,0,.1);*/
 }
@@ -117,10 +119,22 @@ main .container-fluid {
 
   li {
     padding: 10px 10px 10px 10px;
+
+    a {
+      font-style: normal;
+      text-decoration: none;
+      color: var(--side-menu-color);
+      text-align: center;
+
+      .row {
+
+        margin: 0;
+      }
+    }
   }
 
   li:hover {
-    background: $side-menu-hover-background;
+    background: var(--side-menu-hover-background);
     cursor: pointer;
   }
 
@@ -129,13 +143,7 @@ main .container-fluid {
     line-height: 42px;
   }
 
-  a {
-    font-style: normal;
-    text-decoration: none;
-    color: $side-menu-color;
 
-    text-align: center;
-  }
 
   .menu-icon {
     position: relative;
@@ -176,83 +184,12 @@ main .container-fluid {
   }
 }
 
-.card {
-  border: none;
-
-  .body {
-    padding: 20px;
-  }
-
-  .title {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-
-    text-align: center;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  .amount {
-    font-size: 2.25rem;
-  }
-}
-.card:hover {
-  box-shadow: 0 5px 12px rgba(126,142,177,.2);
-}
-
-.card.header {
-  margin-bottom: 30px;
-}
-
-.card.warning {
-  background-color: #f9d00d;
-}
-
-.card.info {
-  background-color: #1cbfd0;
-}
-
-.card.success {
-  background-color: #28a745;
-}
-.card.danger {
-  background-color: #ef553a;
-}
-
-.card.warning, .card.danger, .card.info, .card.success {
-  color: #FFF;
-  h1, h2, h3, h4, h5, h6 {
-    color: #FFF;
-  }
-}
 
 
 
 
 
-.table {
-  color: $color;
-  border-spacing: 0 5px !important;
 
-  tr {
-    background: $tr-background;
-  }
-
-  td, th {
-    border: none;
-  }
-
-
-}
-
-.table-hover tbody tr:hover {
-  background: $tr-background-hover;
-  color: $color;
-}
 
 .separator {
   border-bottom: 1px solid #d7d7d7;

@@ -21,7 +21,7 @@ export class SideMenu extends React.Component<any, any> {
               <Link to="/dashboard">
                 <div className="row">
                   <div className="col-md-6 col-sm-6 col-xs-6 col-xs-center">
-                    <span>{localization.menu.home}</span>
+                    <span className="nav-item">{localization.menu.home}</span>
                   </div>
                   <div className="col-md-6 col-sm-6 col-xs-6 ">
                     <span className="menu-icon">
@@ -48,7 +48,7 @@ export class SideMenu extends React.Component<any, any> {
             </li>
 
             <li>
-              <Link to="ui">
+              <Link to="/ui">
                 <div className="row">
                   <div className="col-md-6 col-sm-6 col-xs-6 col-xs-center">
                     <span>UI Elements</span>
@@ -62,6 +62,23 @@ export class SideMenu extends React.Component<any, any> {
                 </div>
               </Link>
             </li>
+
+            <li>
+              <Link to="/settings">
+                <div className="row">
+                  <div className="col-md-6 col-sm-6 col-xs-6 col-xs-center">
+                    <span>Settings</span>
+                  </div>
+                  <div className="col-md-6 col-sm-6 col-xs-6">
+                    <span className="menu-icon">
+
+                      <MaterialIcon icon="settings" />
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </li>
+
           </ul>
         </div>
       </nav>

@@ -7,6 +7,9 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
+  output: {
+      publicPath: '/'
+  },
   context: resolve(__dirname, '../../src'),
   module: {
     rules: [
@@ -53,5 +56,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-  },
+    contentBase: './',
+    hot: true
+  }
 };

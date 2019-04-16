@@ -1,10 +1,11 @@
-@import "light2";
+@import "shared";
 
 .navbar {
   box-shadow: 0 1px 15px rgba(0,0,0,.04), 0 1px 6px rgba(0,0,0,.04);
   display: flex;
   padding: 1.5rem 60px 1.5rem 0;
-  background: $top-menu-background;
+  background: var(--top-menu-background);
+  height: 65px;
 }
 
 .navbar .search .search-icon {

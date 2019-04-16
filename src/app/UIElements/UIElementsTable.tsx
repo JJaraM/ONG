@@ -1,13 +1,24 @@
 import * as React from 'react';
 
+import * as Prism from 'prismjs';
 import {Table} from "../../components/Table";
 import TableRow from "../../components/TableRow";
 import TableColumn from "../../components/TableColumn";
+
+import "../../styles/customPrism.scss";
 
 export class UIElementsTable extends React.Component<any, any> {
 
   constructor(props:any) {
     super(props);
+  }
+
+  componentDidMount() {
+    Prism.highlightAll();
+  }
+
+  componentDidUpdate() {
+    Prism.highlightAll();
   }
 
   createData = () => {
@@ -57,10 +68,10 @@ export class UIElementsTable extends React.Component<any, any> {
     const tableRows = this.createData();
 
     return (
-      <div className="change-section row">
+      <div className="section row">
 
         <div className="col-md-6 m-b-10">
-          <h3>Tables</h3>
+          <h5>Tables</h5>
         </div>
 
         <div className="col-lg-12">

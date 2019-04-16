@@ -1,50 +1,13 @@
-@import "light2";
-
-.card-body > .text-center {
-  h1 {
-    line-height: 1.2;
-    margin-bottom: .5rem;
-    font-size: 1.3rem;
-    color: #000;
-  }
-  .avatar-lg {
-      width: 4rem;
-      height: 4rem;
-  }
-}
-.badge-soft-success {
-    color: #0c9!important;
-    background-color: #ccf5eb!important;
-}
+@import "shared";
 
 
-.pet-background {
-  height: 300px;
-  background: #28304e;
-}
+
+
+
 
 .row {
     display: flex;
     margin-right: -15px;
     margin-left: -15px;
     flex-wrap: wrap;
-}
-
-
-.content-wrapper {
-
-    width: 100%;
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
-
-    .row {
-      margin: 0;
-    }
-
-    h1 {
-      font-weight: 500;
-      line-height: 1.2;
-      margin-bottom: .5rem;
-      color: #FFF;
-    }
 }
