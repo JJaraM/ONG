@@ -1,5 +1,8 @@
 @import "shared";
 
+.navbar {
+  box-shadow: 0 1px 0 rgba(32,34,37,.7), 0 2px 0 rgba(0,0,0,.06);
+}
 
 
 .sidebar {
@@ -31,22 +34,6 @@ h1, h2, h3, h4, h5, h6 {
   color: $title-color;
 }
 
-.search {
-  background: #f8f8f8;
-  position: relative;
-  width: 230px;
-  border-radius: 20px;
-  height: 40px;
-}
-
-
-.search input {
-  border: initial;
-  background: transparent;
-  outline: initial!important;
-  padding: .5rem 1rem;
-
-}
 
 .form-control {
   box-shadow: none !important;
@@ -114,7 +101,7 @@ main .container-fluid {
   //padding-top: 2px;
   left: 0;
   //border-right: 1px solid var(--side-menu-background);
-
+  width: 239px;
   box-shadow: 0 3px 30px rgba(0,0,0,.1), 0 3px 20px rgba(0,0,0,.1);
 }
 #content {

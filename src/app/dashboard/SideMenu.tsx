@@ -27,19 +27,19 @@ export class SideMenu extends React.Component<any, any> {
       });
     }
   }
-
+  
   render() {
     return (
-      <nav className="sidebar sidebar-offcanvas sidebar-fixed">
+      <nav className="sidebar sidebar-offcanvas sidebar-fixed" id="sidebar">
         <div id="sideMenu" className="main-menu">
           <ul className="list-unstyled components">
             <li className="menu-item" id='tag-0' onClick={this.changeToAction(0)} >
               <Link to="/dashboard">
                 <div className="row row-item">
-                  <div className="col-md-8 col-sm-8 col-xs-8 col-xs-center">
+                  <div className="menu-item-element col-md-8 col-sm-8 col-xs-8 col-xs-center">
                     <span className="nav-item">{localization.menu.home}</span>
                   </div>
-                  <div className="col-md-4 col-sm-4 col-xs-4">
+                  <div className="menu-icon-element col-md-4 col-sm-4 col-xs-4">
                     <span className="menu-icon">
                       <i className="fas fa-home"></i>
                     </span>
@@ -50,10 +50,10 @@ export class SideMenu extends React.Component<any, any> {
             <li className="menu-item" id='tag-1' onClick={this.changeToAction(1)}>
               <Link to="pets">
                 <div className="row row-item">
-                  <div className="col-md-8 col-sm-8 col-xs-8 col-xs-center">
+                  <div className="menu-item-element col-md-8 col-sm-8 col-xs-8 col-xs-center">
                     <span>Mascotas</span>
                   </div>
-                  <div className="col-md-4 col-sm-4 col-xs-4">
+                  <div className="menu-icon-element col-md-4 col-sm-4 col-xs-4">
                     <span className="menu-icon">
                       <span className="icon-badge badge-success badge badge-pill">4</span>
                       <MaterialIcon icon="pets" />
@@ -66,10 +66,10 @@ export class SideMenu extends React.Component<any, any> {
             <li className="menu-item" id='tag-2' onClick={this.changeToAction(2)}>
               <Link to="/ui">
                 <div className="row row-item">
-                  <div className="col-md-8 col-sm-8 col-xs-8 col-xs-center">
+                  <div className="menu-item-element col-md-8 col-sm-8 col-xs-8 col-xs-center">
                     <span>UI Elements</span>
                   </div>
-                  <div className="col-md-4 col-sm-4 col-xs-4">
+                  <div className="menu-icon-element col-md-4 col-sm-4 col-xs-4">
                     <span className="menu-icon">
                       <span className="icon-badge badge-success badge badge-pill">1</span>
                       <MaterialIcon icon="bookmark" />
@@ -82,10 +82,10 @@ export class SideMenu extends React.Component<any, any> {
             <li className="menu-item" id='tag-3' onClick={this.changeToAction(3)}>
               <Link to="/settings">
                 <div className="row row-item">
-                  <div className="col-md-8 col-sm-8 col-xs-8 col-xs-center">
+                  <div className="menu-item-element col-md-8 col-sm-8 col-xs-8 col-xs-center">
                     <span>{localization.menu.settings}</span>
                   </div>
-                  <div className="col-md-4 col-sm-4 col-xs-4">
+                  <div className="menu-icon-element col-md-4 col-sm-4 col-xs-4">
                     <span className="menu-icon">
                       <MaterialIcon icon="settings" />
                     </span>

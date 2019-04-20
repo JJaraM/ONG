@@ -1,8 +1,43 @@
 @import "shared";
 
+
+.form-control {
+  background-color: var(--form-control-background);
+  border: var(--form-control-border);
+  color: var(--form-control-color);
+
+}
+
+.form-control:focus {
+  background-color: var(--form-control-background-hover);
+  border: var(--form-control-border);
+  color: var(--form-control-color);
+  outline: none;
+}
+
+.menu-item-element {
+  display: block;
+}
+
 .btn-primary.focus, .btn-primary:focus {
   outline:none;
   box-shadow: none !important;
+}
+
+.opacity-75 {
+    opacity: .75;
+}
+
+
+
+.p-b-90 {
+    padding-bottom: 90px;
+}
+.p-t-40 {
+    padding-top: 40px;
+}
+.text-white {
+    color: #fff!important;
 }
 
 .theme-section {

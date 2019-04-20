@@ -1,6 +1,11 @@
 export default {
     themes: {
         masakali: {
+          'form-control-background': '#FFF',
+          'form-control-border': '1px solid #000',
+          'form-control-color': '#000',
+          'form-control-background-hover' : '#000',
+
           'top-menu-background': '#FFF',
 
           'side-menu-background': '#212841',
@@ -40,6 +45,11 @@ export default {
           'section-h5' : '#3e4676'
         },
         meraki: {
+          'form-control-background': '#36393F',
+          'form-control-border': '1px solid rgba(255,255,255,.12)',
+          'form-control-color': '#6c757d',
+          'form-control-background-hover': '#343233',
+
           'top-menu-background': '#2F3136',
 
           'side-menu-background': '#202225',
@@ -51,7 +61,7 @@ export default {
           'subcard-background': 'rgba(114,118,125, .3)',
           'subcard-color' : '#FFF',
           'subcard-box-shadow' : '0 2px 4px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)',
-          'subcard-border' : 'none',
+          'subcard-border' : '1px solid rgba(255,255,255,.12)',
 
           'table-background': 'rgba(47,49,54,.6)',
           'table-hover': 'rgba(114,118,125,.3)',
@@ -68,14 +78,14 @@ export default {
           'color-2': '#36393F',
           'color-3': '#2F3136',
           'card-background': '#323439',
-          'card-border': '1px solid rgba(47,49,54,.9)',
+          'card-border': '1px solid rgba(255,255,255,.12)',
           'card-box-shadow': '0 2px 4px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)',
           'card-box-shadow-hover': '0 2px 4px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)',
           'card-header-background': '#323439',
           'card-header-title': '#FFF',
           'card-h1-color': 'rgba(255,255,255,.7)',
           'card-p-color': '#FFF',
-          'section-background': '#3CA374',
+          'section-background': '#3D4047',
           'section-h5' : '#FFF'
         },
       }

@@ -12,6 +12,7 @@ import { Settings } from "./Settings";
 import "../styles/dashboard.scss";
 import "../styles/card.scss";
 import themesData from "../styles/themes";
+import localization from "../app/Localization";
 
 export class DashboardRouter extends React.Component<any, any> {
 
@@ -19,8 +20,23 @@ export class DashboardRouter extends React.Component<any, any> {
     super(props);
   }
 
+  reload = () => {
+    this.setDefaultLanguage();
+    this.props.history.push("/settings");
+  }
+
   componentDidMount() {
     this.setTheme();
+    this.setDefaultLanguage();
+  }
+
+  setDefaultLanguage() {
+    let language = localStorage.getItem('language');
+    if (language === null || language === undefined || language === '') {
+      language = 'es';
+    }
+    localization.setLanguage(language);
+
   }
 
   setTheme = () => {
@@ -51,9 +67,8 @@ export class DashboardRouter extends React.Component<any, any> {
               <Route path="/pay/:id" exact component={PayDetails} />
               <Route path="/pet/:id" exact component={PetProfile} />
               <Route path="/ui" exact component={UIElements} />
-              <Route path="/settings" exact component={Settings} />
+              <Route path="/settings" exact component={() => <Settings reload={this.reload} />}/>
             </Switch>
-
           </div>
         </div>
       </div>

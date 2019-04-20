@@ -8,12 +8,29 @@
   height: 65px;
 }
 
+
+.search {
+  background: #36393F;
+  position: relative;
+  width: 230px;
+  height: 40px;
+
+  input {
+    border: initial;
+    background: transparent;
+    outline: initial!important;
+    padding: .5rem 1rem;
+    background-color: hsla(0,0%,100%,.1);
+    width: 220px;
+  }
+}
+
 .navbar .search .search-icon {
   font-size: 17px;
   border-radius: 10px;
   color: #8f8f8f;
   position: absolute;
-  width: 40px;
+  width: 50px;
   height: 40px;
   bottom: -8px;
   right: 3px;
