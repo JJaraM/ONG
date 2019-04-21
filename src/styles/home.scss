@@ -10,7 +10,12 @@
   background: #ff5a6e;
 }
 
-.btn-lettuce, .btn-lettuce:hover {
+.btn-lettuce:hover, .btn-lettuce:not(:disabled):not(.disabled).active, .btn-lettuce:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  border-color: #00e08b;
+  background-color: #00c77b;
+}
+
+.btn-lettuce {
   border-color: #00e08b;
   background-color: #00e08b;
 }

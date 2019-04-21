@@ -13,7 +13,14 @@ export default {
       {
         to: '/settings',
         label: 'menu.settings',
-        icon: 'settings'
+        icon: 'settings',
+        subMenu: [
+          {
+            to: '/ui',
+            label: 'menu.users',
+            icon: 'settings'
+          }
+        ]
       }
     ]
 }

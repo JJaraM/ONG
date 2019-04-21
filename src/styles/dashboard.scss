@@ -1,5 +1,24 @@
 @import "shared";
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 .form-control {
   background-color: var(--form-control-background);
@@ -7,6 +26,8 @@
   color: var(--form-control-color);
 
 }
+
+
 
 .form-control:focus {
   background-color: var(--form-control-background-hover);
@@ -16,7 +37,7 @@
 }
 
 .menu-item-element {
-  display: block;
+  display: flex;
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -39,6 +60,7 @@
 .text-white {
     color: #fff!important;
 }
+
 
 .theme-section {
   border: var(--subcard-border);

@@ -28,8 +28,8 @@ export class TopMenu extends React.Component<any, any> {
     for (const item of liElements as any) {
       let title = item.getElementsByClassName('menu-item-element')[0];
       let icon = item.getElementsByClassName('menu-icon-element')[0];
-
-
+      let mainPanel = item.getElementsByClassName('main-panel')[0];
+      console.log(mainPanel);
 
       if (sidebarBig) {
         title.style.display = 'block';

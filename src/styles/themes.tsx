@@ -2,15 +2,16 @@ export default {
     themes: {
         masakali: {
           'form-control-background': '#FFF',
-          'form-control-border': '1px solid #000',
+          'form-control-border': '1px solid #e9eaee',
           'form-control-color': '#000',
-          'form-control-background-hover' : '#000',
+          'form-control-background-hover' : '#FFF',
 
           'top-menu-background': '#FFF',
 
           'side-menu-background': '#212841',
           'side-menu-color': '#FFF',
           'side-menu-hover-background': '#1a1f33',
+          'side-menu-subMenu-background': '#1a1f33',
 
           'body-background': '#F4F7FC',
 
@@ -55,6 +56,7 @@ export default {
           'side-menu-background': '#202225',
           'side-menu-color': '#FFF',
           'side-menu-hover-background': 'rgba(114,118,125, .3)',
+          'side-menu-subMenu-background': '#343233',
 
           'body-background': '#36393f',
 

@@ -18,6 +18,7 @@ export class DashboardRouter extends React.Component<any, any> {
 
   constructor(props:any) {
     super(props);
+    this.setDefaultLanguage();
   }
 
   reload = () => {
@@ -27,7 +28,6 @@ export class DashboardRouter extends React.Component<any, any> {
 
   componentDidMount() {
     this.setTheme();
-    this.setDefaultLanguage();
   }
 
   setDefaultLanguage() {
@@ -36,7 +36,6 @@ export class DashboardRouter extends React.Component<any, any> {
       language = 'es';
     }
     localization.setLanguage(language);
-
   }
 
   setTheme = () => {
