@@ -16,9 +16,9 @@ export default {
         icon: 'settings',
         subMenu: [
           {
-            to: '/ui',
+            to: '/users',
             label: 'menu.users',
-            icon: 'settings'
+            icon: 'person'
           }
         ]
       }

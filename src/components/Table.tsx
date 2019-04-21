@@ -7,6 +7,7 @@ interface Props {
   title: string;
   headers: Array<String>;
   rows: Array<TableRow>;
+  footer?: any;
 }
 
 export class Table extends React.Component<Props, any> {
@@ -94,6 +95,10 @@ export class Table extends React.Component<Props, any> {
             }
             </tbody>
           </table>
+        </div>
+
+        <div className="card-footer">
+          {this.props.footer}
         </div>
       </div>
     )

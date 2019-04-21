@@ -17,7 +17,10 @@ const localization = new LocalizedStrings({
    common: {
      contact: "Contact",
      action: "Action",
-     project: "Project"
+     project: "Project",
+     save: "Save",
+     saved: "Saved",
+     saving: "Saving"
    },
    home: {
      title:"Register completly free",
@@ -30,6 +33,16 @@ const localization = new LocalizedStrings({
      settings: "Settings",
      uiElements: "UI Elements",
      users: "Users"
+   },
+   user: {
+     title: "Users",
+     description: "View to show the user of the application",
+     username: "Username",
+     role: "Role(s)",
+     addUserTitle: "Add user",
+     addUserDescription: "Use the following section to create an user",
+     currentUsers: "Current Users",
+     roleOperations: "If you did not found the correct role, and you need to create a new one please go to",
    },
    pending_payment: {
      title: "Pending Payments",
@@ -54,7 +67,10 @@ const localization = new LocalizedStrings({
    common: {
      contact: "Contacto",
      action: "Acción",
-     project: "Proyecto"
+     project: "Proyecto",
+     save: "Guardar",
+     saved: "Guardado",
+     saving: "Guardando"
    },
    home: {
      title:"Regístrese completamente gratis",
@@ -67,6 +83,16 @@ const localization = new LocalizedStrings({
      settings: "Configuraciones",
      uiElements: "UI Elementos",
      users: "Usuarios"
+   },
+   user: {
+     title: "Usuarios",
+     description: "Vista para mostrar los usuarios de la aplicación",
+     username: "Nombre de Usuario",
+     role: "Role(s)",
+     addUserTitle: "Agregar usuario",
+     addUserDescription: "Use el siguiente formulario para agrear un usuario",
+     currentUsers: "Usuarios Actuales",
+     roleOperations: "Si no encuentra el rol necesario, y ocupa crear uno vaya al siguiente",
    },
    pending_payment: {
      title: "Pagos Pendientes",

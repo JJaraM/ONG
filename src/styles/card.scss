@@ -11,6 +11,10 @@
   border: var(--card-border);
   box-shadow: var(--card-box-shadow);
 
+  a {
+    color: var(--card-hyperlink);
+  }
+
   h1 {
     line-height: 1.2;
     margin-bottom: .5rem;

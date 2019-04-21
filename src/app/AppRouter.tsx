@@ -14,6 +14,7 @@ export const AppRouter: React.StatelessComponent = () => {
       <Route exact path="/pets" component={DashboardRouter} />
       <Route exact path="/ui" component={DashboardRouter} />
       <Route exact path="/settings" component={DashboardRouter} />
+      <Route exact path="/users" component={DashboardRouter} />
       <Route exact path="/pay/:id" component={DashboardRouter} />
     </Switch>
   );

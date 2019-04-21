@@ -42,6 +42,8 @@ export default {
           'card-header-title': '#000',
           'card-h1-color': 'rgba(255,255,255,.7)',
           'card-p-color': '#FFF',
+          'card-hyperlink': '#000',
+
           'section-background': '#28304E',
           'section-h5' : '#3e4676'
         },
@@ -87,6 +89,8 @@ export default {
           'card-header-title': '#FFF',
           'card-h1-color': 'rgba(255,255,255,.7)',
           'card-p-color': '#FFF',
+          'card-hyperlink': '#c7c2c2',
+
           'section-background': '#3D4047',
           'section-h5' : '#FFF'
         },

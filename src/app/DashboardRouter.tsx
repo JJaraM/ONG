@@ -9,6 +9,7 @@ import { SideMenu } from "./dashboard/SideMenu";
 import { PayDetails } from "./pay/PayDetails";
 import { UIElements } from "./UIElements";
 import { Settings } from "./Settings";
+import { Users } from "../app/settings/Users";
 import "../styles/dashboard.scss";
 import "../styles/card.scss";
 import themesData from "../styles/themes";
@@ -66,6 +67,7 @@ export class DashboardRouter extends React.Component<any, any> {
               <Route path="/pay/:id" exact component={PayDetails} />
               <Route path="/pet/:id" exact component={PetProfile} />
               <Route path="/ui" exact component={UIElements} />
+              <Route path="/users" component={Users} />
               <Route path="/settings" exact component={() => <Settings event={this.reload} />}/>
             </Switch>
           </div>

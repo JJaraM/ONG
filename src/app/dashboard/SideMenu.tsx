@@ -97,13 +97,11 @@ export class SideMenu extends React.Component<any, any> {
                 const icon = this.isOpened(index) ? 'expand_less' : 'expand_more';
 
                 if (hasSubMenu) {
-
                   SubArrow = (props) => (
                     <span className="menu-arrow" onClick={() => this.showSubMenu(index) } >
                       <MaterialIcon icon={icon} />
                     </span>
                   );
-
                 }
 
                 return (
