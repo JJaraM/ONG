@@ -12,6 +12,9 @@
     "starter",
     "boilerplate"
   ],
+  "engines": {
+    "yarn": "1.x"
+  },
   "author": "Viktor Persson",
   "license": "MIT",
   "repository": {
