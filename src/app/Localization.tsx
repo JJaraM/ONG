@@ -27,7 +27,8 @@ const localization = new LocalizedStrings({
    },
    menu: {
      home: "Home",
-     settings: "Settings"
+     settings: "Settings",
+     uiElements: "UI Elements"
    },
    pending_payment: {
      title: "Pending Payments",
@@ -62,7 +63,8 @@ const localization = new LocalizedStrings({
    },
    menu: {
      home: "Inicio",
-     settings: "Configuraciones"
+     settings: "Configuraciones",
+     uiElements: "UI Elementos"
    },
    pending_payment: {
      title: "Pagos Pendientes",

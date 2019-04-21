@@ -2,7 +2,7 @@ import * as React from 'react';
 import localization from "../../app/Localization";
 
 interface Props {
-  reload: () => any;
+  event: () => any;
 }
 
 export class Languages extends React.Component<Props, any> {
@@ -18,7 +18,7 @@ export class Languages extends React.Component<Props, any> {
   changeLanguage = (event: any) => {
     const language = event.target.value;
     localStorage.setItem('language', language);
-    this.props.reload();
+    this.props.event();
   }
 
   renderLanguages = () => {

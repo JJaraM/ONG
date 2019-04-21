@@ -4,13 +4,12 @@ import {Theme} from "../app/settings/Theme";
 import {Languages} from "../app/settings/Languages";
 
 interface Props {
-  reload: () => any;
+  event: () => any;
 }
 export class Settings extends React.Component<Props, any> {
 
   constructor(props:Props) {
     super(props);
-
   }
 
   render() {
@@ -32,7 +31,7 @@ export class Settings extends React.Component<Props, any> {
 
           <div className="content-wrapper ">
             <Theme />
-            <Languages reload={this.props.reload}/>
+            <Languages event={this.props.event}/>
           </div>
         </div>
     )

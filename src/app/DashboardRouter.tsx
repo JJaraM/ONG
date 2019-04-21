@@ -67,7 +67,7 @@ export class DashboardRouter extends React.Component<any, any> {
               <Route path="/pay/:id" exact component={PayDetails} />
               <Route path="/pet/:id" exact component={PetProfile} />
               <Route path="/ui" exact component={UIElements} />
-              <Route path="/settings" exact component={() => <Settings reload={this.reload} />}/>
+              <Route path="/settings" exact component={() => <Settings event={this.reload} />}/>
             </Switch>
           </div>
         </div>

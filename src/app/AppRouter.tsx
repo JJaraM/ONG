@@ -6,7 +6,6 @@ import { DashboardRouter } from './DashboardRouter';
 
 
 export const AppRouter: React.StatelessComponent = () => {
-  console.log('App Router');
   return (
     <Switch>
       <Route exact path="/" component={Home} />
