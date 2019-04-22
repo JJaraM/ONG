@@ -47,7 +47,7 @@ export default {
           'section-background': '#28304E',
           'section-h5' : '#3e4676'
         },
-        meraki: {
+        mnyama: { //Zulu => Dark
           'form-control-background': '#36393F',
           'form-control-border': '1px solid rgba(255,255,255,.12)',
           'form-control-color': '#6c757d',

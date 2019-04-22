@@ -44,7 +44,10 @@ export class DashboardRouter extends React.Component<any, any> {
     if (userConfigurationTheme === null || userConfigurationTheme === undefined || userConfigurationTheme === '') {
       userConfigurationTheme = 'masakali';
     }
-    const theme = themesData.themes[userConfigurationTheme];
+    let theme = themesData.themes[userConfigurationTheme];
+    if (theme === undefined) {
+      theme = themesData.themes['masakali'];
+    }
     Object.keys(theme).forEach((key) => {
       const cssKey = `--${key}`;
       const cssValue = theme[key];
