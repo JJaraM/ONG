@@ -1,17 +1,19 @@
-const express = require('express');
-const app = express();
-const portNumber = process.env.PORT || 8080;
-const sourceDir = 'dist';
+var express = require('express');
+var path = require('path');
 
-app.use(express.static(sourceDir));
+var port = process.env.PORT || 8080;
+var app = express();
 
-app.get('/', function(req, res){
-    const path = '/index.html';
-    console.log('sending to ' + path);
-    res.sendFile(path);
+app.use(express.static(path.join(__dirname, 'dist')));
+
+app.get('*', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
-app.listen(portNumber, () => {
-  console.log(`Express web server started: http://localhost:${portNumber}`);
-  console.log(`Serving content from /${sourceDir}/`);
+app.listen(port, (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(`server started port: ${port}`);
+  }
 });
