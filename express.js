@@ -9,7 +9,7 @@ console.log(__dirname);
 
 app.get('/', function(req, res){
     console.log('redirect');
-    res.sendFile(__dirname  + "/" + sourceDir + '/index.html');
+    res.sendFile('index.tsx');
 });
 
 app.listen(portNumber, () => {
