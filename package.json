@@ -33,8 +33,7 @@
     "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
     "start-prod": "yarn run build && node express.js",
     "test": "jest --watch --coverage --config=configs/jest.json",
-    "heroku-prebuild": "yarn install --network-timeout 1000000",
-    "heroku-postbuild": "webpack -p --config=configs/webpack/prod.js --progress"
+    "heroku-prebuild": "yarn install --network-timeout 1000000"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",

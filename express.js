@@ -5,12 +5,6 @@ const sourceDir = 'dist';
 
 app.use(express.static(sourceDir));
 
-console.log(__dirname);
-
-app.get('/', function(req, res){
-    console.log('redirect');
-    res.sendFile('/src/index.tsx');
-});
 
 app.listen(portNumber, () => {
   console.log(`Express web server started: http://localhost:${portNumber}`);
