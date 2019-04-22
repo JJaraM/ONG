@@ -6,7 +6,7 @@ const sourceDir = 'dist';
 app.use(express.static(sourceDir));
 
 app.get('/', function(req, res){
-    const path = path.join(__dirname+'/src/index.html.ejs');
+    const path = '/src/index.html.ejs';
     console.log('sending to ' + path);
     res.sendFile(path);
 });
