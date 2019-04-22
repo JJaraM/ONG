@@ -33,7 +33,7 @@
     "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
     "start-prod": "yarn run build && node express.js",
     "test": "jest --watch --coverage --config=configs/jest.json",
-    "heroku-prebuild": "npm install --dev && yarn install --network-timeout 1000000",
+    "heroku-prebuild": "yarn install",
     "heroku-postbuild": "webpack -p --config=configs/webpack/prod.js --progress"
   },
   "devDependencies": {
@@ -75,7 +75,6 @@
   "dependencies": {
     "mdbreact": "^4.13.0",
     "prismjs": "^1.15.0",
-    "react-localization": "^1.0.13",
-    "webpack": "^4.29.6"
+    "react-localization": "^1.0.13"
   }
 }
