@@ -4,11 +4,13 @@ var path = require('path');
 var port = process.env.PORT || 8080;
 var app = express();
 
-console.log('Dist Folder: ' + path.join(__dirname, '../dist/index.html'));
+var pathVar = path.join(__dirname, '../dist', 'index.html');
+
+console.log('Dist Folder: ' + pathVar);
 app.use(express.static(path.join(__dirname, '../dist')));
 
 app.get('*', (_req, res) => {
-  res.sendFile(path.join(__dirname, '../dist/index.html'));
+  res.sendFile(pathVar);
 });
 
 app.listen(port, (err) => {
