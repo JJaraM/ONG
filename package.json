@@ -36,6 +36,16 @@
     "heroku-prebuild": "yarn install --network-timeout 1000000"
   },
   "devDependencies": {
+
+  },
+  "dependencies": {
+    "mdbreact": "^4.13.0",
+    "prismjs": "^1.15.0",
+    "react-localization": "^1.0.13",
+    "webpack": "^4.29.6",
+    "express": "^4.16.4",
+    "webpack-cli": "^3.3.0",
+    "webpack-merge": "^4.2.1",
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
@@ -66,14 +76,5 @@
     "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack-dev-middleware": "^3.6.2",
     "webpack-dev-server": "^3.2.1"
-  },
-  "dependencies": {
-    "mdbreact": "^4.13.0",
-    "prismjs": "^1.15.0",
-    "react-localization": "^1.0.13",
-    "webpack": "^4.29.6",
-    "express": "^4.16.4",
-    "webpack-cli": "^3.3.0",
-    "webpack-merge": "^4.2.1"
   }
 }
