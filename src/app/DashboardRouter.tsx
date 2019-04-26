@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import { HashRouter, Route, Switch, Redirect} from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect, BrowserRouter as Router} from "react-router-dom";
+
 import { Dashboard } from "./Dashboard";
 import { PetProfile } from "./PetProfile";
 import { Pets } from "./Pets";
@@ -9,11 +10,13 @@ import { SideMenu } from "./dashboard/SideMenu";
 import { PayDetails } from "./pay/PayDetails";
 import { UIElements } from "./UIElements";
 import { Settings } from "./Settings";
-import { Users } from "../app/settings/Users";
+import { UsersRouter } from "../app/settings/UsersRouter";
+import { Themes } from "../app/settings/Themes";
 import "../styles/dashboard.scss";
 import "../styles/card.scss";
 import themesData from "../styles/themes";
 import localization from "../app/Localization";
+import { Button, ToastContainer, toast } from 'mdbreact';
 
 export class DashboardRouter extends React.Component<any, any> {
 
@@ -59,23 +62,27 @@ export class DashboardRouter extends React.Component<any, any> {
   render() {
 
     return (
-      <div className="wrapper ">
-        <TopMenu />
-        <div className="container-fluid page-body-wrapper">
-          <SideMenu />
-          <div className="main-panel">
-            <Switch>
-              <Route path="/dashboard" exact component={Dashboard} />
-              <Route path="/pets" exact component={Pets} />
-              <Route path="/pay/:id" exact component={PayDetails} />
-              <Route path="/pet/:id" exact component={PetProfile} />
-              <Route path="/ui" exact component={UIElements} />
-              <Route path="/users" component={Users} />
-              <Route path="/settings" exact component={() => <Settings event={this.reload} />}/>
-            </Switch>
-          </div>
+        <Router>
+          <div className="wrapper ">
+            <TopMenu />
+            <div className="container-fluid page-body-wrapper">
+              <SideMenu />
+              <div className="main-panel">
+                <Switch>
+                  <Route path="/settings/themes" exact component={Themes} />
+                  <Route exact path="/dashboard" component={Dashboard} />
+                  <Route path="/pets" exact component={Pets} />
+                  <Route path="/pay/:id" exact component={PayDetails} />
+                  <Route path="/pet/:id" exact component={PetProfile} />
+                  <Route path="/ui" exact component={UIElements} />
+                  <Route path="/settings/users" component={UsersRouter} />
+                  <Route path="/settings" exact component={() => <Settings event={this.reload} />}/>
+                </Switch>
+              </div>
+            </div>
+          <ToastContainer hideProgressBar={true} newestOnTop={true} autoClose={5000} />
         </div>
-      </div>
+      </Router>
     );
   }
 }

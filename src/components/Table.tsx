@@ -14,7 +14,22 @@ export class Table extends React.Component<Props, any> {
 
   constructor(props:any) {
     super(props);
+    this.handleInputChange = this.handleInputChange.bind(this);
   }
+
+  handleInputChange(event) {
+     const target = event.target;
+     const value = target.type === 'checkbox' ? target.checked : target.value;
+     const name = target.name;
+
+     console.log('name ' + name + " value " + value);
+
+     this.setState({
+       [name]: value
+     });
+
+
+   }
 
   render() {
     return (
@@ -68,6 +83,17 @@ export class Table extends React.Component<Props, any> {
                                     <button className="btn btn-primary btn-sm btn-lettuce" onClick={() => column.action(rowId) } >
                                       {column.value}
                                     </button>
+                                  )
+                                }
+                                if (column.type === 'checkbox') {
+                                  return (
+
+                                    <>
+                                      <label className="container">{column.value}
+                                        <input name={column.value} type="checkbox" onChange={this.handleInputChange} />
+                                        <span className="checkmark"></span>
+                                      </label>
+                                    </>
                                   )
                                 }
                                 if (column.type === 'avatar') {

@@ -20,7 +20,8 @@ const localization = new LocalizedStrings({
      project: "Project",
      save: "Save",
      saved: "Saved",
-     saving: "Saving"
+     saving: "Saving",
+     back: "Back"
    },
    home: {
      title:"Register completly free",
@@ -32,17 +33,25 @@ const localization = new LocalizedStrings({
      home: "Home",
      settings: "Settings",
      uiElements: "UI Elements",
-     users: "Users"
+     users: "Users",
+     themes: "Themes"
    },
    user: {
      title: "Users",
      description: "View to show the user of the application",
      username: "Username",
      role: "Role(s)",
+     permission: "Permission(s)",
      addUserTitle: "Add user",
      addUserDescription: "Use the following section to create an user",
+     addRoleTitle: "Add Role",
+     addRoleDescription: "Use the following section to create a role",
+     addPermissionTitle: "Add Permission",
+     addPermissionDescription: "Use the following section to create a permission",
      currentUsers: "Current Users",
+     userOperations: "If you did not found the correct user, and you need to create a new one please go to",
      roleOperations: "If you did not found the correct role, and you need to create a new one please go to",
+     permissionOperations: "If you did not found the correct permission, and you need to create a new one please go to"
    },
    pending_payment: {
      title: "Pending Payments",
@@ -70,7 +79,8 @@ const localization = new LocalizedStrings({
      project: "Proyecto",
      save: "Guardar",
      saved: "Guardado",
-     saving: "Guardando"
+     saving: "Guardando",
+     back: "Atrás"
    },
    home: {
      title:"Regístrese completamente gratis",
@@ -82,17 +92,25 @@ const localization = new LocalizedStrings({
      home: "Inicio",
      settings: "Configuraciones",
      uiElements: "UI Elementos",
-     users: "Usuarios"
+     users: "Usuarios",
+     themes: "Temas"
    },
    user: {
      title: "Usuarios",
      description: "Vista para mostrar los usuarios de la aplicación",
      username: "Nombre de Usuario",
      role: "Role(s)",
+     permission: "Permiso(s)",
      addUserTitle: "Agregar usuario",
      addUserDescription: "Use el siguiente formulario para agrear un usuario",
+     addRoleTitle: "Agregar Role",
+     addRoleDescription: "Use el siguiente formulario para agrear un role",
+     addPermissionTitle: "Agregar Permiso",
+     addPermissionDescription: "Use el siguiente formulario para agrear un permiso",
      currentUsers: "Usuarios Actuales",
+     userOperations: "Si no encuentra el usuario necesario, y ocupa crear uno vaya al siguiente",
      roleOperations: "Si no encuentra el rol necesario, y ocupa crear uno vaya al siguiente",
+     permissionOperations: "Si no encuentra el permiso necesario, y ocupa crear uno vaya al siguiente",
    },
    pending_payment: {
      title: "Pagos Pendientes",

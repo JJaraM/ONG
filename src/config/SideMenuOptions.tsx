@@ -11,12 +11,17 @@ export default {
         icon: 'bookmark'
       },
       {
-        to: '/settings',
+        to: '?',
         label: 'menu.settings',
         icon: 'settings',
         subMenu: [
           {
-            to: '/users',
+            to: '/settings/themes',
+            label: 'menu.themes',
+            icon: 'settings'
+          },
+          {
+            to: '/settings/users',
             label: 'menu.users',
             icon: 'person'
           }

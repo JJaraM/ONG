@@ -1,9 +1,7 @@
 import * as React from 'react';
 
-import "../styles/petProfile.scss";
 import {withRouter} from "react-router-dom";
 import MaterialIcon, {colorPalette} from 'material-icons-react';
-
 
 interface Props {
   icon: string;

@@ -1,6 +1,4 @@
 import * as React from 'react';
-
-import "../styles/petProfile.scss";
 import {withRouter} from "react-router-dom";
 import MaterialIcon, {colorPalette} from 'material-icons-react';
 
@@ -14,7 +12,6 @@ export class PetProfile extends React.Component<any, any> {
 
     return (
         <div className="content-wrapper">
-
           <div className="pet-background">
             <div className="row p-b-60 p-t-60">
               <div className="col-md-10 mx-auto text-center text-white p-b-30">
@@ -27,7 +24,6 @@ export class PetProfile extends React.Component<any, any> {
               </div>
             </div>
           </div>
-
 
           <div className="content-wrapper pull-up">
             <div className="change-section row">

@@ -13,7 +13,7 @@ export class TopMenu extends React.Component<any, any> {
 
   collapse = () => {
     const element = document.getElementById('sidebar');
-    const sideMenuElement = document.getElementById('sideMenu');
+    const sideMenuElement = document.getElementById('id-side-menu');
     const ulElement = sideMenuElement.getElementsByTagName('ul')[0];
     const liElements : HTMLCollectionOf<HTMLLIElement> = ulElement.getElementsByTagName('li');
 

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import MaterialIcon, {colorPalette} from 'material-icons-react';
 import localization from "../Localization";
 import sideMenu from "../../config/SideMenuOptions";
-import LocalizedStrings from 'react-localization';
 
 export class SideMenu extends React.Component<any, any> {
 
