@@ -36,6 +36,9 @@
     "heroku-prebuild": "yarn install --network-timeout 1000000"
   },
   "devDependencies": {
+
+  },
+  "dependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
@@ -77,6 +80,5 @@
     "webpack-dev-middleware": "^3.6.2",
     "webpack-dev-server": "^3.2.1",
     "webpack-merge": "^4.2.1"
-  },
-  "dependencies": {}
+  }
 }
