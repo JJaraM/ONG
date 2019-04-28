@@ -1,22 +1,19 @@
 import * as React from 'react';
 
 import MaterialIcon, {colorPalette} from 'material-icons-react';
-import {PullUpCard} from "../components/PullUpCard";
+import {PullUpCard} from "../../components/PullUpCard";
 
-import {Table} from "../components/Table";
-import TableRow from "../components/TableRow";
-import TableColumn from "../components/TableColumn";
-import localization from "./Localization";
-import people from "../mock/people";
-
+import {Table} from "../../components/Table";
+import TableRow from "../../components/TableRow";
+import TableColumn from "../../components/TableColumn";
+import localization from "../Localization";
+import people from "../../mock/people";
 
 export class Dashboard extends React.Component<any, any> {
 
   constructor(props:any) {
     super(props);
   }
-
-
 
   createData = () => {
     const tableRows = Array<TableRow>();

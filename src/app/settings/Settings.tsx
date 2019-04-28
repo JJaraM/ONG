@@ -1,7 +1,7 @@
 import * as React from 'react';
-import localization from "./Localization";
-import {Theme} from "../app/settings/Theme";
-import {Languages} from "../app/settings/Languages";
+import localization from "../Localization";
+
+import {Languages} from "./Languages";
 
 interface Props {
   event: () => any;
@@ -30,7 +30,7 @@ export class Settings extends React.Component<Props, any> {
 
 
           <div className="content-wrapper ">
-            <Theme />
+
             <Languages event={this.props.event}/>
           </div>
         </div>

@@ -2,12 +2,9 @@ import * as React from 'react';
 
 import {withRouter} from "react-router-dom";
 import MaterialIcon, {colorPalette} from 'material-icons-react';
-import localization from "./Localization";
-
-import {PullUpCard} from "../components/PullUpCard";
-import {UIElementsTable} from "../app/UIElements/UIElementsTable";
-
-
+import localization from "../Localization";
+import {PullUpCard} from "../../components/PullUpCard";
+import {UIElementsTable} from "../UIElements/UIElementsTable";
 
 export class UIElements extends React.Component<any, any> {
 

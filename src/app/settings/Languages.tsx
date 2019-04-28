@@ -58,14 +58,14 @@ export class Languages extends React.Component<Props, any> {
         <div className="col-lg-8 mx-auto  mt-2">
           <div className="card py-3 m-b-30">
             <div className="card-body">
-              <h3>{localization.settings.languages}</h3>
+              <h3>{ localization.settings.languages }</h3>
               <p className="text-muted">
-                {localization.settings.languages_description}
+                { localization.settings.languages_description }
               </p>
               <div className="row">
                 <div className="col-12 form-group tt-select">
-                  <select className="form-control" onChange={this.changeLanguage}>
-                    { this.renderLanguages()}
+                  <select className="form-control" onChange={ this.changeLanguage }>
+                    { this.renderLanguages() }
                   </select>
                 </div>
               </div>
