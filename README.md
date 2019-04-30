@@ -1,3 +1,5 @@
+# Project Deprecated moved to use redux.
+
 [![Build Status](https://travis-ci.org/JJaraM/ONG.svg?branch=master)](https://travis-ci.org/JJaraM/ONG)
 
 # Instalation
